@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind Range Slider Styles */
+input[type='range'] {
+    width: 100%;
+    -webkit-appearance: none; /* For WebKit browsers (Chrome, Safari) */
+  -moz-appearance: none;    /* For Firefox */
+  appearance: none;  
+    height: 8px; /* Tailwind's gray-300 */
+    border-radius: 9999px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none; /* For WebKit browsers */
+  appearance: none; 
+    width: 30px;
+    min-height: 30px;
+    background-image: url(/slide_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+  .bg-layer{
+    background-image: url(/bg_layer.png);
+  }
+  
