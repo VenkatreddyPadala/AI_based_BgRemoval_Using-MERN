@@ -7,7 +7,7 @@ dotenv.config();
 const clerkWebhooks = async (req, res) => {
     try {
         // Verify webhook signature
-        const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
+        const whook = new Webhook("whsec_lRs2ICZ7kJ0yzJA8dMttU47p+xWHDGPS");
         whook.verify(JSON.stringify(req.body), {
             "svix-id": req.headers["svix-id"],
             "svix-timestamp": req.headers["svix-timestamp"],
